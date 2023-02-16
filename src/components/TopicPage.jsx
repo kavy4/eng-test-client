@@ -9,7 +9,7 @@ const TopicPage = ({ topic }) => {
 
     return (
         <>
-            <Button className='block mx-auto my-5' disabled={startTest}><Link to='/'>Материалы для подготовки</Link></Button>
+            <Button className='block mx-auto my-5' disabled={startTest}><Link to={topic.materialForPreparation.path}>Материалы для подготовки</Link></Button>
             <Button className='block mx-auto my-5' onClick={() => setStartTest(!startTest)} disabled={startTest}>Начать тест</Button>
             { startTest && <QuizList quizList={topic.quiz} /> }
         </>

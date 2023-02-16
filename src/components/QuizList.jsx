@@ -23,7 +23,7 @@ const QuizList = ({ quizList }) => {
                     }
                 }
             }) }
-            { step == quizList.length && <QuizResult points={points} /> } 
+            { step == quizList.length && <QuizResult points={points} path='/8-class/eng/module-5/material-for-preparation' /> } 
         </>
     )
 }

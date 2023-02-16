@@ -10,19 +10,16 @@ const appList = [
                         title: 'Module 5',
                         path: '/8-class/eng/module-5',
                         materialForPreparation: {
-                            quiz: [
+                            path: '/8-class/eng/module-5/material-for-preparation',
+                            material: [
                                 {
-                                    type: 'test',
-                                    title: 'Quiz 1',
-                                    variants: ['variant1', 'variant2', 'variant3'],
-                                    correct: 0
+                                    title: 'Лексика',
+                                    description: 'Shy - confident / робкий - уверенный\nSelfish - generous / эгоистичный - щедрый\nReliable - unreliable / надёжный - ненадёжный\nStubborn - flexible / упрямый - гибкий'
                                 },
-        
+    
                                 {
-                                    type: 'test',
-                                    title: 'Quiz 2',
-                                    variants: ['variant1', 'variant2', 'variant3'],
-                                    correct: 2
+                                    title: 'Словообразование',
+                                    description: 'Сущ. + ful, al, ic, ish, less, ly = прил.'
                                 }
                             ]
                         },
