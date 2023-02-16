@@ -19,7 +19,7 @@ function App() {
         { appList.map(item => item.subjectsList.map(subject => <Route path={subject.path} element={ subject.topicsList.map(topic => <Link to={topic.path} className='block w-9/12 border mx-auto my-5 p-4 rounded-md shadow font-semibold transition-all hover:-translate-y-0.5'>{topic.title}</Link>) } />)) }
 
         { appList.map(item => item.subjectsList.map(subject => subject.topicsList.map(topic => <Route path={topic.materialForPreparation.path} element={ <>
-          <img src={MaterialForPreparation} alt='Материалы для подготовки' />
+          <img className='mx-auto' src={MaterialForPreparation} alt='Материалы для подготовки' />
           <Button className='block mx-auto my-5'><Link to={topic.path}>Назад</Link></Button>
         </> } />))) }
 
